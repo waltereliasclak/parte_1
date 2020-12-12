@@ -1,0 +1,64 @@
+git config --global user.name "walter clak"
+
+git config --global user.email "walterelias10@gmail.com"
+
+git config --global core.editor subl
+
+git init => inicia o repositorio
+
+clico de vida
+- untracked  - feito mas nao ta adicionado ao git
+- unmodified - nao foi modificado mas ja existe
+- modified   - foi modificado mas ja existe
+- staged     - preparado para commit
+
+git checkout -b testing
+
+git add "arquivo"
+
+git commit -m "descrição"
+
+git log
+git log --author="nome"
+git shortlog -> mostra a pes	
+git shortlog -sn
+git log --graph
+git show 3d6430ed247ea61b57157566d9f703c8074e9c8 "linha de codigo q foi inserido"
+
+git diff ver o que foi alterado antes de commitar
+git diff -name-only "mostrar apenas os arquivos alterados"
+
+git checkout arquivo.txt "desfazer a alteração" 
+
+- apagando branch
+git branch -D testing
+
+
+git reset HEAD readme.md "tirar da fila do staged"
+
+volta os commits
+git reset --soft
+git reset --mixed
+git reset --hard "ignora o commit q foi enviado"
+
+gerar chave
+git remote add origin git@github.com:waltereliasclak/parte_1.git "ligar repositorio"
+ssh-keygen -t ed25519 -C "your_email@example.com"
+
+git push -u origin master
+
+-- quando der erro --
+touch .gitignore
+git add .gitignore
+git commit -m "gitignore file"
+git push -u origin master
+
+git clone "baixa um projeto"
+
+
+
+
+
+
+
+
